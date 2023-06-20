@@ -28,6 +28,7 @@ class User extends Authenticatable
         'nik',
         'phone',
         'address',
+        'avatar',
         'email',
         'password',
         'organization_id',
@@ -54,15 +55,6 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-    ];
-
-    /**
-     * The accessors to append to the model's array form.
-     *
-     * @var array<int, string>
-     */
-    protected $appends = [
-        'profile_photo_url',
     ];
 
     public function organization()

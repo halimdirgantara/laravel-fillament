@@ -24,7 +24,7 @@ return new class extends Migration
             $table->rememberToken();
             $table->boolean('is_online')->default(false);
             $table->boolean('is_active')->default(true);
-            $table->string('profile_photo_path', 2048)->nullable();
+            $table->string('avatar', 2048)->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
